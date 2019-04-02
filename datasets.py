@@ -7,6 +7,8 @@ import numpy as np
 import cv2
 import os
 
+PATH = os.path.abspath(os.path.dirname(__file__))
+
 train_dirs = ["jena/", "zurich/", "weimar/", "ulm/", "tubingen/", "stuttgart/",
               "strasbourg/", "monchengladbach/", "krefeld/", "hanover/",
               "hamburg/", "erfurt/", "dusseldorf/", "darmstadt/", "cologne/",
@@ -208,6 +210,63 @@ class DatasetVal(torch.utils.data.Dataset):
         label_img = torch.from_numpy(label_img) # (shape: (512, 1024))
 
         return (img, label_img, img_id)
+
+    def __len__(self):
+        return self.num_examples
+
+class DatasetFullSeq(torch.utils.data.Dataset):
+    def __init__(self, sequence_data_path, mode="train"):
+        self.img_dir = os.path.join(sequence_data_path, "leftImg8bit_sequence", mode)
+
+        self.img_h = 1024
+        self.img_w = 2048
+
+        self.new_img_h = 256
+        self.new_img_w = 512
+        
+        self.examples = []
+        dirs = os.listdir(self.img_dir)
+        for location_data_path in dirs:
+            img_dir_path = os.path.join(self.img_dir, location_data_path)
+            if not os.path.isdir(img_dir_path):
+                print("Not a Directory", img_dir_path)
+                continue
+
+            file_names = os.listdir(img_dir_path)
+            for file_name in file_names:
+                img_id = file_name.split("_leftImg8bit.png")[0]
+
+                img_path = os.path.join(img_dir_path, file_name)
+
+                example = {}
+                example["img_path"] = img_path
+                example["img_id"] = img_id
+                self.examples.append(example)
+
+        self.num_examples = len(self.examples)
+
+    def __getitem__(self, index):
+        example = self.examples[index]
+
+        img_id = example["img_id"]
+
+        img_path = example["img_path"]
+        img = cv2.imread(img_path, -1) # (shape: (1024, 2048, 3))
+        # resize img without interpolation:
+        img = cv2.resize(img, (self.new_img_w, self.new_img_h),
+                         interpolation=cv2.INTER_NEAREST) # (shape: (256, 512, 3))
+
+        # normalize the img (with the mean and std for the pretrained ResNet):
+        img = img/255.0
+        img = img - np.array([0.485, 0.456, 0.406])
+        img = img/np.array([0.229, 0.224, 0.225]) # (shape: (256, 512, 3))
+        img = np.transpose(img, (2, 0, 1)) # (shape: (3, 256, 512))
+        img = img.astype(np.float32)
+
+        # convert numpy -> torch:
+        img = torch.from_numpy(img) # (shape: (3, 256, 512))
+
+        return (img, img_id)
 
     def __len__(self):
         return self.num_examples
