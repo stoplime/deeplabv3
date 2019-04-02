@@ -5,6 +5,9 @@ import numpy as np
 import cv2
 import os
 from collections import namedtuple
+import tqdm
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 # (NOTE! this is taken from the official Cityscapes scripts:)
 Label = namedtuple( 'Label' , [
@@ -94,8 +97,8 @@ train_dirs = ["jena/", "zurich/", "weimar/", "ulm/", "tubingen/", "stuttgart/",
 val_dirs = ["frankfurt/", "munster/", "lindau/"]
 test_dirs = ["berlin", "bielefeld", "bonn", "leverkusen", "mainz", "munich"]
 
-cityscapes_data_path = "/root/deeplabv3/data/cityscapes"
-cityscapes_meta_path = "/root/deeplabv3/data/cityscapes/meta"
+cityscapes_data_path = os.path.join(ROOT, "data/cityscapes")
+cityscapes_meta_path = os.path.join(ROOT, "data/cityscapes/meta")
 
 if not os.path.exists(cityscapes_meta_path):
     os.makedirs(cityscapes_meta_path)
@@ -109,7 +112,7 @@ train_label_img_paths = []
 
 img_dir = cityscapes_data_path + "/leftImg8bit/train/"
 label_dir = cityscapes_data_path + "/gtFine/train/"
-for train_dir in train_dirs:
+for train_dir in tqdm.tqdm(train_dirs):
     print (train_dir)
 
     train_img_dir_path = img_dir + train_dir
@@ -131,7 +134,7 @@ for train_dir in train_dirs:
 
 img_dir = cityscapes_data_path + "/leftImg8bit/val/"
 label_dir = cityscapes_data_path + "/gtFine/val/"
-for val_dir in val_dirs:
+for val_dir in tqdm.tqdm(val_dirs):
     print (val_dir)
 
     val_img_dir_path = img_dir + val_dir

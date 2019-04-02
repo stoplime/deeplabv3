@@ -1,14 +1,17 @@
 # camera-ready
 
 import sys
+import os
 
-sys.path.append("/root/deeplabv3")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+sys.path.append(ROOT)
 from datasets import DatasetVal # (this needs to be imported before torch, because cv2 needs to be imported before torch for some reason)
 
-sys.path.append("/root/deeplabv3/model")
+sys.path.append(os.path.join(ROOT, "model"))
 from deeplabv3 import DeepLabV3
 
-sys.path.append("/root/deeplabv3/utils")
+sys.path.append(os.path.join(ROOT, "utils"))
 from utils import label_img_to_color
 
 import torch
@@ -24,14 +27,15 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import cv2
+import tqdm
 
 batch_size = 2
 
-network = DeepLabV3("eval_val", project_dir="/root/deeplabv3").cuda()
-network.load_state_dict(torch.load("/root/deeplabv3/pretrained_models/model_13_2_2_2_epoch_580.pth"))
+network = DeepLabV3("eval_val", project_dir=ROOT).cuda()
+network.load_state_dict(torch.load(os.path.join(ROOT, "pretrained_models/model_13_2_2_2_epoch_580.pth")))
 
-val_dataset = DatasetVal(cityscapes_data_path="/root/deeplabv3/data/cityscapes",
-                         cityscapes_meta_path="/root/deeplabv3/data/cityscapes/meta")
+val_dataset = DatasetVal(cityscapes_data_path=os.path.join(ROOT, "data/cityscapes"),
+                         cityscapes_meta_path=os.path.join(ROOT, "data/cityscapes/meta"))
 
 num_val_batches = int(len(val_dataset)/batch_size)
 print ("num_val_batches:", num_val_batches)
@@ -40,7 +44,9 @@ val_loader = torch.utils.data.DataLoader(dataset=val_dataset,
                                          batch_size=batch_size, shuffle=False,
                                          num_workers=1)
 
-with open("/root/deeplabv3/data/cityscapes/meta/class_weights.pkl", "rb") as file: # (needed for python3)
+os.makedirs(os.path.abspath(os.path.join(network.model_dir, "..", "model_eval_val_seg")), exist_ok=True)
+
+with open(os.path.join(ROOT, "data/cityscapes/meta/class_weights.pkl"), "rb") as file: # (needed for python3)
     class_weights = np.array(pickle.load(file))
 class_weights = torch.from_numpy(class_weights)
 class_weights = Variable(class_weights.type(torch.FloatTensor)).cuda()
@@ -50,7 +56,7 @@ loss_fn = nn.CrossEntropyLoss(weight=class_weights)
 
 network.eval() # (set in evaluation mode, this affects BatchNorm and dropout)
 batch_losses = []
-for step, (imgs, label_imgs, img_ids) in enumerate(val_loader):
+for step, (imgs, label_imgs, img_ids) in enumerate(tqdm.tqdm(val_loader)):
     with torch.no_grad(): # (corresponds to setting volatile=True in all variables, this is done during inference to reduce memory consumption)
         imgs = Variable(imgs).cuda() # (shape: (batch_size, 3, img_h, img_w))
         label_imgs = Variable(label_imgs.type(torch.LongTensor)).cuda() # (shape: (batch_size, img_h, img_w))
@@ -86,7 +92,8 @@ for step, (imgs, label_imgs, img_ids) in enumerate(val_loader):
                 overlayed_img = 0.35*img + 0.65*pred_label_img_color
                 overlayed_img = overlayed_img.astype(np.uint8)
 
-                cv2.imwrite(network.model_dir + "/" + img_id + "_overlayed.png", overlayed_img)
+                cv2.imwrite(os.path.abspath(os.path.join(network.model_dir, "..", "model_eval_val_seg", img_id + "_seg.png")), pred_label_img)
+                cv2.imwrite(os.path.join(network.model_dir, img_id + "_overlayed.png"), overlayed_img)
 
 val_loss = np.mean(batch_losses)
 print ("val loss: %g" % val_loss)

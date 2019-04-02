@@ -1,14 +1,17 @@
 # camera-ready
 
 import sys
+import os
 
-sys.path.append("/root/deeplabv3")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+sys.path.append(ROOT)
 from datasets import DatasetThnSeq # (this needs to be imported before torch, because cv2 needs to be imported before torch for some reason)
 
-sys.path.append("/root/deeplabv3/model")
+sys.path.append(os.path.join(ROOT, "model"))
 from deeplabv3 import DeepLabV3
 
-sys.path.append("/root/deeplabv3/utils")
+sys.path.append(os.path.join(ROOT, "utils"))
 from utils import label_img_to_color
 
 import torch
@@ -27,10 +30,10 @@ import cv2
 
 batch_size = 2
 
-network = DeepLabV3("eval_seq_thn", project_dir="/root/deeplabv3").cuda()
-network.load_state_dict(torch.load("/root/deeplabv3/pretrained_models/model_13_2_2_2_epoch_580.pth"))
+network = DeepLabV3("eval_seq", project_dir="/root/deeplabv3").cuda()
+network.load_state_dict(torch.load(os.path.join(ROOT, "pretrained_models/model_13_2_2_2_epoch_580.pth")))
 
-val_dataset = DatasetThnSeq(thn_data_path="/root/deeplabv3/data/thn")
+val_dataset = DatasetThnSeq(thn_data_path=os.path.join(ROOT, "data/thn"))
 
 num_val_batches = int(len(val_dataset)/batch_size)
 print ("num_val_batches:", num_val_batches)

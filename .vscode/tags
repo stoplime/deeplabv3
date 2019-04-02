@@ -1,0 +1,283 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASPP	../model/aspp.py	/^class ASPP(nn.Module):$/;"	kind:class	line:7
+ASPP_Bottleneck	../model/aspp.py	/^class ASPP_Bottleneck(nn.Module):$/;"	kind:class	line:54
+BasicBlock	../model/resnet.py	/^class BasicBlock(nn.Module):$/;"	kind:class	line:22
+Bottleneck	../model/resnet.py	/^class Bottleneck(nn.Module):$/;"	kind:class	line:55
+DatasetSeq	../datasets.py	/^class DatasetSeq(torch.utils.data.Dataset):$/;"	kind:class	line:215
+DatasetThnSeq	../datasets.py	/^class DatasetThnSeq(torch.utils.data.Dataset):$/;"	kind:class	line:266
+DatasetTrain	../datasets.py	/^class DatasetTrain(torch.utils.data.Dataset):$/;"	kind:class	line:17
+DatasetVal	../datasets.py	/^class DatasetVal(torch.utils.data.Dataset):$/;"	kind:class	line:140
+DeepLabV3	../model/deeplabv3.py	/^class DeepLabV3(nn.Module):$/;"	kind:class	line:12
+Label	../utils/preprocess_data.py	/^Label = namedtuple( 'Label' , [$/;"	kind:variable	line:12
+ROOT	../evaluation/eval_on_val.py	/^ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))$/;"	kind:variable	line:6
+ROOT	../utils/preprocess_data.py	/^ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))$/;"	kind:variable	line:9
+ResNet101_OS16	../model/resnet.py	/^def ResNet101_OS16():$/;"	kind:function	line:223
+ResNet152_OS16	../model/resnet.py	/^def ResNet152_OS16():$/;"	kind:function	line:226
+ResNet18_OS16	../model/resnet.py	/^def ResNet18_OS16():$/;"	kind:function	line:214
+ResNet18_OS8	../model/resnet.py	/^def ResNet18_OS8():$/;"	kind:function	line:229
+ResNet34_OS16	../model/resnet.py	/^def ResNet34_OS16():$/;"	kind:function	line:217
+ResNet34_OS8	../model/resnet.py	/^def ResNet34_OS8():$/;"	kind:function	line:232
+ResNet50_OS16	../model/resnet.py	/^def ResNet50_OS16():$/;"	kind:function	line:220
+ResNet_BasicBlock_OS16	../model/resnet.py	/^class ResNet_BasicBlock_OS16(nn.Module):$/;"	kind:class	line:135
+ResNet_BasicBlock_OS8	../model/resnet.py	/^class ResNet_BasicBlock_OS8(nn.Module):$/;"	kind:class	line:172
+ResNet_Bottleneck_OS16	../model/resnet.py	/^class ResNet_Bottleneck_OS16(nn.Module):$/;"	kind:class	line:92
+__getitem__	../datasets.py	/^    def __getitem__(self, index):$/;"	kind:member	line:172
+__getitem__	../datasets.py	/^    def __getitem__(self, index):$/;"	kind:member	line:240
+__getitem__	../datasets.py	/^    def __getitem__(self, index):$/;"	kind:member	line:285
+__getitem__	../datasets.py	/^    def __getitem__(self, index):$/;"	kind:member	line:48
+__init__	../datasets.py	/^    def __init__(self, cityscapes_data_path, cityscapes_meta_path):$/;"	kind:member	line:141
+__init__	../datasets.py	/^    def __init__(self, cityscapes_data_path, cityscapes_meta_path):$/;"	kind:member	line:18
+__init__	../datasets.py	/^    def __init__(self, cityscapes_data_path, cityscapes_meta_path, sequence):$/;"	kind:member	line:216
+__init__	../datasets.py	/^    def __init__(self, thn_data_path):$/;"	kind:member	line:267
+__init__	../model/aspp.py	/^    def __init__(self, num_classes):$/;"	kind:member	line:55
+__init__	../model/aspp.py	/^    def __init__(self, num_classes):$/;"	kind:member	line:8
+__init__	../model/deeplabv3.py	/^    def __init__(self, model_id, project_dir):$/;"	kind:member	line:13
+__init__	../model/resnet.py	/^    def __init__(self, in_channels, channels, stride=1, dilation=1):$/;"	kind:member	line:25
+__init__	../model/resnet.py	/^    def __init__(self, in_channels, channels, stride=1, dilation=1):$/;"	kind:member	line:58
+__init__	../model/resnet.py	/^    def __init__(self, num_layers):$/;"	kind:member	line:136
+__init__	../model/resnet.py	/^    def __init__(self, num_layers):$/;"	kind:member	line:173
+__init__	../model/resnet.py	/^    def __init__(self, num_layers):$/;"	kind:member	line:93
+__len__	../datasets.py	/^    def __len__(self):$/;"	kind:member	line:137
+__len__	../datasets.py	/^    def __len__(self):$/;"	kind:member	line:212
+__len__	../datasets.py	/^    def __len__(self):$/;"	kind:member	line:263
+__len__	../datasets.py	/^    def __len__(self):$/;"	kind:member	line:305
+add_weight_decay	../utils/utils.py	/^def add_weight_decay(net, l2_value, skip_list=()):$/;"	kind:function	line:8
+aspp.py	../model/aspp.py	1;"	kind:file	line:1
+batch_losses	../evaluation/eval_on_val.py	/^batch_losses = []$/;"	kind:variable	line:55
+batch_losses	../evaluation/eval_on_val_for_metrics.py	/^batch_losses = []$/;"	kind:variable	line:76
+batch_losses	../train.py	/^    batch_losses = []$/;"	kind:variable	line:119
+batch_losses	../train.py	/^    batch_losses = []$/;"	kind:variable	line:78
+batch_size	../evaluation/eval_on_val.py	/^batch_size = 2$/;"	kind:variable	line:31
+batch_size	../evaluation/eval_on_val_for_metrics.py	/^batch_size = 2$/;"	kind:variable	line:52
+batch_size	../train.py	/^batch_size = 3$/;"	kind:variable	line:33
+batch_size	../visualization/run_on_seq.py	/^batch_size = 2$/;"	kind:variable	line:30
+batch_size	../visualization/run_on_thn_seq.py	/^batch_size = 2$/;"	kind:variable	line:28
+checkpoint_path	../train.py	/^    checkpoint_path = network.checkpoints_dir + "\/model_" + model_id +"_epoch_" + str(epoch+1) + ".pth"$/;"	kind:variable	line:147
+cityscapes_data_path	../utils/preprocess_data.py	/^cityscapes_data_path = os.path.join(ROOT, "data\/cityscapes")$/;"	kind:variable	line:99
+cityscapes_meta_path	../evaluation/eval_on_val.py	/^                         cityscapes_meta_path="\/root\/deeplabv3\/data\/cityscapes\/meta")$/;"	kind:variable	line:37
+cityscapes_meta_path	../evaluation/eval_on_val_for_metrics.py	/^                         cityscapes_meta_path="\/root\/deeplabv3\/data\/cityscapes\/meta")$/;"	kind:variable	line:58
+cityscapes_meta_path	../train.py	/^                             cityscapes_meta_path="\/root\/deeplabv3\/data\/cityscapes\/meta")$/;"	kind:variable	line:39
+cityscapes_meta_path	../train.py	/^                         cityscapes_meta_path="\/root\/deeplabv3\/data\/cityscapes\/meta")$/;"	kind:variable	line:41
+cityscapes_meta_path	../utils/preprocess_data.py	/^cityscapes_meta_path = os.path.join(ROOT, "data\/cityscapes\/meta")$/;"	kind:variable	line:100
+cityscapes_meta_path	../visualization/run_on_seq.py	/^                             cityscapes_meta_path="\/root\/deeplabv3\/data\/cityscapes\/meta",$/;"	kind:variable	line:39
+class_weights	../evaluation/eval_on_val.py	/^    class_weights = np.array(pickle.load(file))$/;"	kind:variable	line:47
+class_weights	../evaluation/eval_on_val.py	/^class_weights = Variable(class_weights.type(torch.FloatTensor)).cuda()$/;"	kind:variable	line:49
+class_weights	../evaluation/eval_on_val.py	/^class_weights = torch.from_numpy(class_weights)$/;"	kind:variable	line:48
+class_weights	../evaluation/eval_on_val_for_metrics.py	/^    class_weights = np.array(pickle.load(file))$/;"	kind:variable	line:68
+class_weights	../evaluation/eval_on_val_for_metrics.py	/^class_weights = Variable(class_weights.type(torch.FloatTensor)).cuda()$/;"	kind:variable	line:70
+class_weights	../evaluation/eval_on_val_for_metrics.py	/^class_weights = torch.from_numpy(class_weights)$/;"	kind:variable	line:69
+class_weights	../train.py	/^    class_weights = np.array(pickle.load(file))$/;"	kind:variable	line:59
+class_weights	../train.py	/^class_weights = Variable(class_weights.type(torch.FloatTensor)).cuda()$/;"	kind:variable	line:61
+class_weights	../train.py	/^class_weights = torch.from_numpy(class_weights)$/;"	kind:variable	line:60
+class_weights	../utils/preprocess_data.py	/^class_weights = []$/;"	kind:variable	line:182
+combined_img	../visualization/run_on_seq.py	/^        combined_img = np.zeros((2*img_h, 2*img_w, 3), dtype=np.uint8)$/;"	kind:variable	line:99
+combined_img	../visualization/run_on_thn_seq.py	/^    combined_img = np.zeros((2*img_h, 2*img_w, 3), dtype=np.uint8)$/;"	kind:variable	line:93
+create_model_dirs	../model/deeplabv3.py	/^    def create_model_dirs(self):$/;"	kind:member	line:39
+datasets.py	../datasets.py	1;"	kind:file	line:1
+deeplabv3.py	../model/deeplabv3.py	1;"	kind:file	line:1
+epoch_loss	../train.py	/^    epoch_loss = np.mean(batch_losses)$/;"	kind:variable	line:132
+epoch_loss	../train.py	/^    epoch_loss = np.mean(batch_losses)$/;"	kind:variable	line:99
+epoch_losses_train	../train.py	/^epoch_losses_train = []$/;"	kind:variable	line:66
+epoch_losses_val	../train.py	/^epoch_losses_val = []$/;"	kind:variable	line:67
+eval_on_val.py	../evaluation/eval_on_val.py	1;"	kind:file	line:1
+eval_on_val_for_metrics.py	../evaluation/eval_on_val_for_metrics.py	1;"	kind:file	line:1
+expansion	../model/resnet.py	/^    expansion = 1$/;"	kind:variable	line:23
+expansion	../model/resnet.py	/^    expansion = 4$/;"	kind:variable	line:56
+file_names	../utils/preprocess_data.py	/^    file_names = os.listdir(train_img_dir_path)$/;"	kind:variable	line:120
+file_names	../utils/preprocess_data.py	/^    file_names = os.listdir(val_img_dir_path)$/;"	kind:variable	line:142
+forward	../model/aspp.py	/^    def forward(self, feature_map):$/;"	kind:member	line:33
+forward	../model/aspp.py	/^    def forward(self, feature_map):$/;"	kind:member	line:80
+forward	../model/deeplabv3.py	/^    def forward(self, x):$/;"	kind:member	line:25
+forward	../model/resnet.py	/^    def forward(self, x):$/;"	kind:member	line:125
+forward	../model/resnet.py	/^    def forward(self, x):$/;"	kind:member	line:162
+forward	../model/resnet.py	/^    def forward(self, x):$/;"	kind:member	line:203
+forward	../model/resnet.py	/^    def forward(self, x):$/;"	kind:member	line:43
+forward	../model/resnet.py	/^    def forward(self, x):$/;"	kind:member	line:79
+gtFine_img	../utils/preprocess_data.py	/^        gtFine_img = cv2.imread(gtFine_img_path, -1) # (shape: (1024, 2048))$/;"	kind:variable	line:125
+gtFine_img	../utils/preprocess_data.py	/^        gtFine_img = cv2.imread(gtFine_img_path, -1) # (shape: (1024, 2048))$/;"	kind:variable	line:147
+gtFine_img_path	../utils/preprocess_data.py	/^        gtFine_img_path = train_label_dir_path + img_id + "_gtFine_labelIds.png"$/;"	kind:variable	line:124
+gtFine_img_path	../utils/preprocess_data.py	/^        gtFine_img_path = val_label_dir_path + img_id + "_gtFine_labelIds.png"$/;"	kind:variable	line:146
+id_to_trainId	../utils/preprocess_data.py	/^id_to_trainId = {label.id: label.trainId for label in labels}$/;"	kind:variable	line:89
+id_to_trainId_map_func	../utils/preprocess_data.py	/^id_to_trainId_map_func = np.vectorize(id_to_trainId.get)$/;"	kind:variable	line:90
+img	../evaluation/eval_on_val.py	/^                img = img + np.array([0.485, 0.456, 0.406])$/;"	kind:variable	line:84
+img	../evaluation/eval_on_val.py	/^                img = img*255.0$/;"	kind:variable	line:85
+img	../evaluation/eval_on_val.py	/^                img = img*np.array([0.229, 0.224, 0.225])$/;"	kind:variable	line:83
+img	../evaluation/eval_on_val.py	/^                img = img.astype(np.uint8)$/;"	kind:variable	line:86
+img	../evaluation/eval_on_val.py	/^                img = img.data.cpu().numpy()$/;"	kind:variable	line:81
+img	../evaluation/eval_on_val.py	/^                img = imgs[i] # (shape: (3, img_h, img_w))$/;"	kind:variable	line:79
+img	../evaluation/eval_on_val.py	/^                img = np.transpose(img, (1, 2, 0)) # (shape: (img_h, img_w, 3))$/;"	kind:variable	line:82
+img	../visualization/run_on_seq.py	/^                img = img + np.array([0.485, 0.456, 0.406])$/;"	kind:variable	line:72
+img	../visualization/run_on_seq.py	/^                img = img*255.0$/;"	kind:variable	line:73
+img	../visualization/run_on_seq.py	/^                img = img*np.array([0.229, 0.224, 0.225])$/;"	kind:variable	line:71
+img	../visualization/run_on_seq.py	/^                img = img.astype(np.uint8)$/;"	kind:variable	line:74
+img	../visualization/run_on_seq.py	/^                img = img.data.cpu().numpy()$/;"	kind:variable	line:69
+img	../visualization/run_on_seq.py	/^                img = imgs[i] # (shape: (3, img_h, img_w))$/;"	kind:variable	line:67
+img	../visualization/run_on_seq.py	/^                img = np.transpose(img, (1, 2, 0)) # (shape: (img_h, img_w, 3))$/;"	kind:variable	line:70
+img	../visualization/run_on_seq.py	/^        img = cv2.imread(network.model_dir + "\/" + img_id + ".png", -1)$/;"	kind:variable	line:95
+img	../visualization/run_on_thn_seq.py	/^            img = img + np.array([0.485, 0.456, 0.406])$/;"	kind:variable	line:65
+img	../visualization/run_on_thn_seq.py	/^            img = img*255.0$/;"	kind:variable	line:66
+img	../visualization/run_on_thn_seq.py	/^            img = img*np.array([0.229, 0.224, 0.225])$/;"	kind:variable	line:64
+img	../visualization/run_on_thn_seq.py	/^            img = img.astype(np.uint8)$/;"	kind:variable	line:67
+img	../visualization/run_on_thn_seq.py	/^            img = img.data.cpu().numpy()$/;"	kind:variable	line:62
+img	../visualization/run_on_thn_seq.py	/^            img = imgs[i] # (shape: (3, img_h, img_w))$/;"	kind:variable	line:60
+img	../visualization/run_on_thn_seq.py	/^            img = np.transpose(img, (1, 2, 0)) # (shape: (img_h, img_w, 3))$/;"	kind:variable	line:63
+img	../visualization/run_on_thn_seq.py	/^    img = cv2.imread(network.model_dir + "\/" + img_id + ".png", -1)$/;"	kind:variable	line:89
+img_dir	../utils/preprocess_data.py	/^img_dir = cityscapes_data_path + "\/leftImg8bit\/train\/"$/;"	kind:variable	line:112
+img_dir	../utils/preprocess_data.py	/^img_dir = cityscapes_data_path + "\/leftImg8bit\/val\/"$/;"	kind:variable	line:134
+img_h	../visualization/run_on_seq.py	/^                img_h = overlayed_img.shape[0]$/;"	kind:variable	line:80
+img_h	../visualization/run_on_thn_seq.py	/^            img_h = overlayed_img.shape[0]$/;"	kind:variable	line:73
+img_id	../evaluation/eval_on_val.py	/^                img_id = img_ids[i]$/;"	kind:variable	line:78
+img_id	../evaluation/eval_on_val_for_metrics.py	/^            img_id = img_ids[i]$/;"	kind:variable	line:100
+img_id	../utils/preprocess_data.py	/^        img_id = file_name.split("_leftImg8bit.png")[0]$/;"	kind:variable	line:122
+img_id	../utils/preprocess_data.py	/^        img_id = file_name.split("_leftImg8bit.png")[0]$/;"	kind:variable	line:144
+img_id	../visualization/run_on_seq.py	/^                img_id = img_ids[i]$/;"	kind:variable	line:66
+img_id	../visualization/run_on_thn_seq.py	/^            img_id = img_ids[i]$/;"	kind:variable	line:59
+img_w	../visualization/run_on_seq.py	/^                img_w = overlayed_img.shape[1]$/;"	kind:variable	line:81
+img_w	../visualization/run_on_thn_seq.py	/^            img_w = overlayed_img.shape[1]$/;"	kind:variable	line:74
+imgs	../evaluation/eval_on_val.py	/^        imgs = Variable(imgs).cuda() # (shape: (batch_size, 3, img_h, img_w))$/;"	kind:variable	line:58
+imgs	../evaluation/eval_on_val_for_metrics.py	/^        imgs = Variable(imgs).cuda() # (shape: (batch_size, 3, img_h, img_w))$/;"	kind:variable	line:79
+imgs	../train.py	/^            imgs = Variable(imgs).cuda() # (shape: (batch_size, 3, img_h, img_w))$/;"	kind:variable	line:122
+imgs	../train.py	/^        imgs = Variable(imgs).cuda() # (shape: (batch_size, 3, img_h, img_w))$/;"	kind:variable	line:82
+imgs	../visualization/run_on_seq.py	/^            imgs = Variable(imgs).cuda() # (shape: (batch_size, 3, img_h, img_w))$/;"	kind:variable	line:53
+imgs	../visualization/run_on_thn_seq.py	/^        imgs = Variable(imgs).cuda() # (shape: (batch_size, 3, img_h, img_w))$/;"	kind:variable	line:46
+label_dir	../utils/preprocess_data.py	/^label_dir = cityscapes_data_path + "\/gtFine\/train\/"$/;"	kind:variable	line:113
+label_dir	../utils/preprocess_data.py	/^label_dir = cityscapes_data_path + "\/gtFine\/val\/"$/;"	kind:variable	line:135
+label_img	../utils/preprocess_data.py	/^        label_img = id_to_trainId_map_func(gtFine_img) # (shape: (1024, 2048))$/;"	kind:variable	line:128
+label_img	../utils/preprocess_data.py	/^        label_img = id_to_trainId_map_func(gtFine_img) # (shape: (1024, 2048))$/;"	kind:variable	line:150
+label_img	../utils/preprocess_data.py	/^        label_img = label_img.astype(np.uint8)$/;"	kind:variable	line:129
+label_img	../utils/preprocess_data.py	/^        label_img = label_img.astype(np.uint8)$/;"	kind:variable	line:151
+label_img	../utils/preprocess_data.py	/^    label_img = cv2.imread(label_img_path, -1)$/;"	kind:variable	line:171
+label_img_to_color	../utils/utils.py	/^def label_img_to_color(img):$/;"	kind:function	line:23
+label_imgs	../evaluation/eval_on_val.py	/^        label_imgs = Variable(label_imgs.type(torch.LongTensor)).cuda() # (shape: (batch_size, img_h, img_w))$/;"	kind:variable	line:59
+label_imgs	../evaluation/eval_on_val_for_metrics.py	/^        label_imgs = Variable(label_imgs.type(torch.LongTensor)).cuda() # (shape: (batch_size, img_h, img_w))$/;"	kind:variable	line:80
+label_imgs	../train.py	/^            label_imgs = Variable(label_imgs.type(torch.LongTensor)).cuda() # (shape: (batch_size, img_h, img_w))$/;"	kind:variable	line:123
+label_imgs	../train.py	/^        label_imgs = Variable(label_imgs.type(torch.LongTensor)).cuda() # (shape: (batch_size, img_h, img_w))$/;"	kind:variable	line:83
+labels	../utils/preprocess_data.py	/^labels = [$/;"	kind:variable	line:49
+learning_rate	../train.py	/^learning_rate = 0.0001$/;"	kind:variable	line:34
+loss	../evaluation/eval_on_val.py	/^        loss = loss_fn(outputs, label_imgs)$/;"	kind:variable	line:64
+loss	../evaluation/eval_on_val_for_metrics.py	/^        loss = loss_fn(outputs, label_imgs)$/;"	kind:variable	line:85
+loss	../train.py	/^            loss = loss_fn(outputs, label_imgs)$/;"	kind:variable	line:128
+loss	../train.py	/^        loss = loss_fn(outputs, label_imgs)$/;"	kind:variable	line:88
+loss_fn	../evaluation/eval_on_val.py	/^loss_fn = nn.CrossEntropyLoss(weight=class_weights)$/;"	kind:variable	line:52
+loss_fn	../evaluation/eval_on_val_for_metrics.py	/^loss_fn = nn.CrossEntropyLoss(weight=class_weights)$/;"	kind:variable	line:73
+loss_fn	../train.py	/^loss_fn = nn.CrossEntropyLoss(weight=class_weights)$/;"	kind:variable	line:64
+loss_value	../evaluation/eval_on_val.py	/^        loss_value = loss.data.cpu().numpy()$/;"	kind:variable	line:65
+loss_value	../evaluation/eval_on_val_for_metrics.py	/^        loss_value = loss.data.cpu().numpy()$/;"	kind:variable	line:86
+loss_value	../train.py	/^            loss_value = loss.data.cpu().numpy()$/;"	kind:variable	line:129
+loss_value	../train.py	/^        loss_value = loss.data.cpu().numpy()$/;"	kind:variable	line:89
+make_layer	../model/resnet.py	/^def make_layer(block, in_channels, channels, num_blocks, stride=1, dilation=1):$/;"	kind:function	line:10
+model_id	../train.py	/^model_id = "1"$/;"	kind:variable	line:30
+model_id	../utils/random_code.py	/^model_id = "13_2_2_2"$/;"	kind:variable	line:13
+network	../evaluation/eval_on_val.py	/^network = DeepLabV3("eval_val", project_dir="\/root\/deeplabv3").cuda()$/;"	kind:variable	line:33
+network	../evaluation/eval_on_val_for_metrics.py	/^network = DeepLabV3("eval_val_for_metrics", project_dir="\/root\/deeplabv3").cuda()$/;"	kind:variable	line:54
+network	../train.py	/^network = DeepLabV3(model_id, project_dir="\/root\/deeplabv3").cuda()$/;"	kind:variable	line:36
+network	../visualization/run_on_seq.py	/^network = DeepLabV3("eval_seq", project_dir="\/root\/deeplabv3").cuda()$/;"	kind:variable	line:32
+network	../visualization/run_on_thn_seq.py	/^network = DeepLabV3("eval_seq_thn", project_dir="\/root\/deeplabv3").cuda()$/;"	kind:variable	line:30
+num_classes	../utils/preprocess_data.py	/^num_classes = 20$/;"	kind:variable	line:160
+num_epochs	../train.py	/^num_epochs = 1000$/;"	kind:variable	line:32
+num_train_batches	../train.py	/^num_train_batches = int(len(train_dataset)\/batch_size)$/;"	kind:variable	line:43
+num_val_batches	../evaluation/eval_on_val.py	/^num_val_batches = int(len(val_dataset)\/batch_size)$/;"	kind:variable	line:39
+num_val_batches	../evaluation/eval_on_val_for_metrics.py	/^num_val_batches = int(len(val_dataset)\/batch_size)$/;"	kind:variable	line:60
+num_val_batches	../train.py	/^num_val_batches = int(len(val_dataset)\/batch_size)$/;"	kind:variable	line:44
+num_val_batches	../visualization/run_on_seq.py	/^    num_val_batches = int(len(val_dataset)\/batch_size)$/;"	kind:variable	line:42
+num_val_batches	../visualization/run_on_thn_seq.py	/^num_val_batches = int(len(val_dataset)\/batch_size)$/;"	kind:variable	line:35
+num_workers	../evaluation/eval_on_val.py	/^                                         num_workers=1)$/;"	kind:variable	line:44
+num_workers	../evaluation/eval_on_val_for_metrics.py	/^                                         num_workers=1)$/;"	kind:variable	line:65
+num_workers	../train.py	/^                                           num_workers=1)$/;"	kind:variable	line:50
+num_workers	../train.py	/^                                         num_workers=1)$/;"	kind:variable	line:53
+num_workers	../visualization/run_on_seq.py	/^                                             num_workers=1)$/;"	kind:variable	line:47
+num_workers	../visualization/run_on_thn_seq.py	/^                                         num_workers=1)$/;"	kind:variable	line:40
+optimizer	../train.py	/^optimizer = torch.optim.Adam(params, lr=learning_rate)$/;"	kind:variable	line:56
+out	../visualization/run_on_seq.py	/^    out = cv2.VideoWriter("%s\/stuttgart_%s_combined.avi" % (network.model_dir, sequence), cv2.VideoWriter_fourcc(*"MJPG"), 20, (2*img_w, 2*img_h))$/;"	kind:variable	line:92
+out	../visualization/run_on_thn_seq.py	/^out = cv2.VideoWriter("%s\/thn_combined.avi" % network.model_dir, cv2.VideoWriter_fourcc(*"MJPG"), 12, (2*img_w, 2*img_h))$/;"	kind:variable	line:86
+outputs	../evaluation/eval_on_val.py	/^        outputs = network(imgs) # (shape: (batch_size, num_classes, img_h, img_w))$/;"	kind:variable	line:61
+outputs	../evaluation/eval_on_val.py	/^        outputs = outputs.data.cpu().numpy() # (shape: (batch_size, num_classes, img_h, img_w))$/;"	kind:variable	line:71
+outputs	../evaluation/eval_on_val_for_metrics.py	/^        outputs = F.upsample(outputs, size=(1024, 2048), mode="bilinear") # (shape: (batch_size, num_classes, 1024, 2048))$/;"	kind:variable	line:92
+outputs	../evaluation/eval_on_val_for_metrics.py	/^        outputs = network(imgs) # (shape: (batch_size, num_classes, img_h, img_w))$/;"	kind:variable	line:82
+outputs	../evaluation/eval_on_val_for_metrics.py	/^        outputs = outputs.data.cpu().numpy() # (shape: (batch_size, num_classes, 1024, 2048))$/;"	kind:variable	line:94
+outputs	../train.py	/^            outputs = network(imgs) # (shape: (batch_size, num_classes, img_h, img_w))$/;"	kind:variable	line:125
+outputs	../train.py	/^        outputs = network(imgs) # (shape: (batch_size, num_classes, img_h, img_w))$/;"	kind:variable	line:85
+outputs	../visualization/run_on_seq.py	/^            outputs = network(imgs) # (shape: (batch_size, num_classes, img_h, img_w))$/;"	kind:variable	line:55
+outputs	../visualization/run_on_seq.py	/^            outputs = outputs.data.cpu().numpy() # (shape: (batch_size, num_classes, img_h, img_w))$/;"	kind:variable	line:60
+outputs	../visualization/run_on_thn_seq.py	/^        outputs = network(imgs) # (shape: (batch_size, num_classes, img_h, img_w))$/;"	kind:variable	line:48
+outputs	../visualization/run_on_thn_seq.py	/^        outputs = outputs.data.cpu().numpy() # (shape: (batch_size, num_classes, img_h, img_w))$/;"	kind:variable	line:53
+overlayed_img	../evaluation/eval_on_val.py	/^                overlayed_img = 0.35*img + 0.65*pred_label_img_color$/;"	kind:variable	line:89
+overlayed_img	../evaluation/eval_on_val.py	/^                overlayed_img = overlayed_img.astype(np.uint8)$/;"	kind:variable	line:90
+overlayed_img	../visualization/run_on_seq.py	/^                overlayed_img = 0.35*img + 0.65*pred_label_img_color$/;"	kind:variable	line:77
+overlayed_img	../visualization/run_on_seq.py	/^                overlayed_img = overlayed_img.astype(np.uint8)$/;"	kind:variable	line:78
+overlayed_img	../visualization/run_on_seq.py	/^        overlayed_img = cv2.imread(network.model_dir + "\/" + img_id + "_overlayed.png", -1)$/;"	kind:variable	line:97
+overlayed_img	../visualization/run_on_thn_seq.py	/^            overlayed_img = 0.35*img + 0.65*pred_label_img_color$/;"	kind:variable	line:70
+overlayed_img	../visualization/run_on_thn_seq.py	/^            overlayed_img = overlayed_img.astype(np.uint8)$/;"	kind:variable	line:71
+overlayed_img	../visualization/run_on_thn_seq.py	/^    overlayed_img = cv2.imread(network.model_dir + "\/" + img_id + "_overlayed.png", -1)$/;"	kind:variable	line:91
+params	../train.py	/^params = add_weight_decay(network, l2_value=0.0001)$/;"	kind:variable	line:55
+pred_img	../visualization/run_on_seq.py	/^        pred_img = cv2.imread(network.model_dir + "\/" + img_id + "_pred.png", -1)$/;"	kind:variable	line:96
+pred_img	../visualization/run_on_thn_seq.py	/^    pred_img = cv2.imread(network.model_dir + "\/" + img_id + "_pred.png", -1)$/;"	kind:variable	line:90
+pred_label_img	../evaluation/eval_on_val.py	/^                pred_label_img = pred_label_imgs[i] # (shape: (img_h, img_w))$/;"	kind:variable	line:77
+pred_label_img	../evaluation/eval_on_val_for_metrics.py	/^            pred_label_img = pred_label_img.astype(np.uint8)$/;"	kind:variable	line:104
+pred_label_img	../evaluation/eval_on_val_for_metrics.py	/^            pred_label_img = pred_label_imgs[i] # (shape: (1024, 2048))$/;"	kind:variable	line:99
+pred_label_img	../evaluation/eval_on_val_for_metrics.py	/^            pred_label_img = trainId_to_id_map_func(pred_label_img) # (shape: (1024, 2048))$/;"	kind:variable	line:103
+pred_label_img	../visualization/run_on_seq.py	/^                pred_label_img = pred_label_imgs[i] # (shape: (img_h, img_w))$/;"	kind:variable	line:65
+pred_label_img	../visualization/run_on_thn_seq.py	/^            pred_label_img = pred_label_imgs[i] # (shape: (img_h, img_w))$/;"	kind:variable	line:58
+pred_label_img_color	../evaluation/eval_on_val.py	/^                pred_label_img_color = label_img_to_color(pred_label_img)$/;"	kind:variable	line:88
+pred_label_img_color	../visualization/run_on_seq.py	/^                pred_label_img_color = label_img_to_color(pred_label_img)$/;"	kind:variable	line:76
+pred_label_img_color	../visualization/run_on_thn_seq.py	/^            pred_label_img_color = label_img_to_color(pred_label_img)$/;"	kind:variable	line:69
+pred_label_imgs	../evaluation/eval_on_val.py	/^        pred_label_imgs = np.argmax(outputs, axis=1) # (shape: (batch_size, img_h, img_w))$/;"	kind:variable	line:72
+pred_label_imgs	../evaluation/eval_on_val.py	/^        pred_label_imgs = pred_label_imgs.astype(np.uint8)$/;"	kind:variable	line:73
+pred_label_imgs	../evaluation/eval_on_val_for_metrics.py	/^        pred_label_imgs = np.argmax(outputs, axis=1) # (shape: (batch_size, 1024, 2048))$/;"	kind:variable	line:95
+pred_label_imgs	../evaluation/eval_on_val_for_metrics.py	/^        pred_label_imgs = pred_label_imgs.astype(np.uint8)$/;"	kind:variable	line:96
+pred_label_imgs	../visualization/run_on_seq.py	/^            pred_label_imgs = np.argmax(outputs, axis=1) # (shape: (batch_size, img_h, img_w))$/;"	kind:variable	line:61
+pred_label_imgs	../visualization/run_on_seq.py	/^            pred_label_imgs = pred_label_imgs.astype(np.uint8)$/;"	kind:variable	line:62
+pred_label_imgs	../visualization/run_on_thn_seq.py	/^        pred_label_imgs = np.argmax(outputs, axis=1) # (shape: (batch_size, img_h, img_w))$/;"	kind:variable	line:54
+pred_label_imgs	../visualization/run_on_thn_seq.py	/^        pred_label_imgs = pred_label_imgs.astype(np.uint8)$/;"	kind:variable	line:55
+preprocess_data.py	../utils/preprocess_data.py	1;"	kind:file	line:1
+random_code.py	../utils/random_code.py	1;"	kind:file	line:1
+resnet.py	../model/resnet.py	1;"	kind:file	line:1
+run_on_seq.py	../visualization/run_on_seq.py	1;"	kind:file	line:1
+run_on_thn_seq.py	../visualization/run_on_thn_seq.py	1;"	kind:file	line:1
+sequence	../visualization/run_on_seq.py	/^                             sequence=sequence)$/;"	kind:variable	line:40
+sorted_img_ids	../visualization/run_on_seq.py	/^    sorted_img_ids = sorted(unsorted_img_ids)$/;"	kind:variable	line:93
+sorted_img_ids	../visualization/run_on_thn_seq.py	/^sorted_img_ids = sorted(unsorted_img_ids)$/;"	kind:variable	line:87
+test_dirs	../datasets.py	/^test_dirs = ["berlin", "bielefeld", "bonn", "leverkusen", "mainz", "munich"]$/;"	kind:variable	line:15
+test_dirs	../utils/preprocess_data.py	/^test_dirs = ["berlin", "bielefeld", "bonn", "leverkusen", "mainz", "munich"]$/;"	kind:variable	line:97
+total_count	../utils/preprocess_data.py	/^total_count = sum(trainId_to_count.values())$/;"	kind:variable	line:183
+train.py	../train.py	1;"	kind:file	line:1
+trainId_count	../utils/preprocess_data.py	/^        trainId_count = np.sum(trainId_mask)$/;"	kind:variable	line:176
+trainId_mask	../utils/preprocess_data.py	/^        trainId_mask = np.equal(label_img, trainId)$/;"	kind:variable	line:175
+trainId_prob	../utils/preprocess_data.py	/^    trainId_prob = float(count)\/float(total_count)$/;"	kind:variable	line:185
+trainId_to_count	../utils/preprocess_data.py	/^trainId_to_count = {}$/;"	kind:variable	line:162
+trainId_to_id	../evaluation/eval_on_val_for_metrics.py	/^trainId_to_id = {$/;"	kind:variable	line:28
+trainId_to_id_map_func	../evaluation/eval_on_val_for_metrics.py	/^trainId_to_id_map_func = np.vectorize(trainId_to_id.get)$/;"	kind:variable	line:50
+trainId_weight	../utils/preprocess_data.py	/^    trainId_weight = 1\/np.log(1.02 + trainId_prob)$/;"	kind:variable	line:186
+train_dataset	../train.py	/^train_dataset = DatasetTrain(cityscapes_data_path="\/root\/deeplabv3\/data\/cityscapes",$/;"	kind:variable	line:38
+train_dirs	../datasets.py	/^train_dirs = ["jena\/", "zurich\/", "weimar\/", "ulm\/", "tubingen\/", "stuttgart\/",$/;"	kind:variable	line:10
+train_dirs	../utils/preprocess_data.py	/^train_dirs = ["jena\/", "zurich\/", "weimar\/", "ulm\/", "tubingen\/", "stuttgart\/",$/;"	kind:variable	line:92
+train_img_dir_path	../utils/preprocess_data.py	/^    train_img_dir_path = img_dir + train_dir$/;"	kind:variable	line:117
+train_label_dir_path	../utils/preprocess_data.py	/^    train_label_dir_path = label_dir + train_dir$/;"	kind:variable	line:118
+train_label_img_paths	../utils/preprocess_data.py	/^train_label_img_paths = []$/;"	kind:variable	line:110
+train_loader	../train.py	/^train_loader = torch.utils.data.DataLoader(dataset=train_dataset,$/;"	kind:variable	line:48
+train_loss	../utils/random_code.py	/^    train_loss = pickle.load(file)$/;"	kind:variable	line:16
+unsorted_img_ids	../visualization/run_on_seq.py	/^    unsorted_img_ids = []$/;"	kind:variable	line:50
+unsorted_img_ids	../visualization/run_on_thn_seq.py	/^unsorted_img_ids = []$/;"	kind:variable	line:43
+utils.py	../utils/utils.py	1;"	kind:file	line:1
+val_dataset	../evaluation/eval_on_val.py	/^val_dataset = DatasetVal(cityscapes_data_path="\/root\/deeplabv3\/data\/cityscapes",$/;"	kind:variable	line:36
+val_dataset	../evaluation/eval_on_val_for_metrics.py	/^val_dataset = DatasetVal(cityscapes_data_path="\/root\/deeplabv3\/data\/cityscapes",$/;"	kind:variable	line:57
+val_dataset	../train.py	/^val_dataset = DatasetVal(cityscapes_data_path="\/root\/deeplabv3\/data\/cityscapes",$/;"	kind:variable	line:40
+val_dataset	../visualization/run_on_seq.py	/^    val_dataset = DatasetSeq(cityscapes_data_path="\/root\/deeplabv3\/data\/cityscapes",$/;"	kind:variable	line:38
+val_dataset	../visualization/run_on_thn_seq.py	/^val_dataset = DatasetThnSeq(thn_data_path="\/root\/deeplabv3\/data\/thn")$/;"	kind:variable	line:33
+val_dirs	../datasets.py	/^val_dirs = ["frankfurt\/", "munster\/", "lindau\/"]$/;"	kind:variable	line:14
+val_dirs	../utils/preprocess_data.py	/^val_dirs = ["frankfurt\/", "munster\/", "lindau\/"]$/;"	kind:variable	line:96
+val_img_dir_path	../utils/preprocess_data.py	/^    val_img_dir_path = img_dir + val_dir$/;"	kind:variable	line:139
+val_label_dir_path	../utils/preprocess_data.py	/^    val_label_dir_path = label_dir + val_dir$/;"	kind:variable	line:140
+val_loader	../evaluation/eval_on_val.py	/^val_loader = torch.utils.data.DataLoader(dataset=val_dataset,$/;"	kind:variable	line:42
+val_loader	../evaluation/eval_on_val_for_metrics.py	/^val_loader = torch.utils.data.DataLoader(dataset=val_dataset,$/;"	kind:variable	line:63
+val_loader	../train.py	/^val_loader = torch.utils.data.DataLoader(dataset=val_dataset,$/;"	kind:variable	line:51
+val_loader	../visualization/run_on_seq.py	/^    val_loader = torch.utils.data.DataLoader(dataset=val_dataset,$/;"	kind:variable	line:45
+val_loader	../visualization/run_on_thn_seq.py	/^val_loader = torch.utils.data.DataLoader(dataset=val_dataset,$/;"	kind:variable	line:38
+val_loss	../evaluation/eval_on_val.py	/^val_loss = np.mean(batch_losses)$/;"	kind:variable	line:94
+val_loss	../evaluation/eval_on_val_for_metrics.py	/^val_loss = np.mean(batch_losses)$/;"	kind:variable	line:108
+val_loss	../utils/random_code.py	/^    val_loss = pickle.load(file)$/;"	kind:variable	line:19
